@@ -1,0 +1,12 @@
+auto-fill-service/*.json
+AIJobGenerator/*.env
+AnalyticsService/*.env
+auto-fill-service/*.env
+Automate_Email/*.env
+CoverLetterGenerator/*.env
+frontend/*.env
+HRManagement/*.env
+JobMatcher/*.env
+login/*.env
+ragview/*.env
+ResumeEnhancer/*.env

@@ -1,0 +1,11 @@
+google-generativeai==0.4.1
+python-dotenv==1.0.1
+fastapi
+uvicorn[standard]
+python-dotenv
+jinja2
+sqlalchemy
+pandas
+psycopg2-binary
+requests
+python-multipart

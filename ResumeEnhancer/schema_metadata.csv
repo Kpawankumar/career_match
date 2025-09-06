@@ -1,0 +1,154 @@
+table_schema,table_name,column_name,data_type,is_primary_key,is_foreign_key
+public,admin_support,user_id,character varying,YES,YES
+public,admin_support,as_name,character varying,NO,NO
+public,admin_support,service_type,character varying,NO,NO
+public,admin_support,contact,character varying,NO,NO
+public,app_resume,user_id,character varying,YES,YES
+public,app_resume,content,text,NO,NO
+public,app_user,user_id,character varying,YES,NO
+public,app_user,u_name,character varying,NO,NO
+public,app_user,email_id,character varying,NO,NO
+public,app_user,ur_id,integer,NO,YES
+public,applicant,user_id,character varying,YES,YES
+public,applicant,app_name,character varying,NO,NO
+public,applicant,email,character varying,NO,NO
+public,applicant,phone,character varying,NO,NO
+public,application_status,id,integer,YES,NO
+public,application_status,job_id,integer,NO,YES
+public,application_status,applicant_id,character varying,NO,YES
+public,application_status,status,character varying,NO,NO
+public,application_status,enhanced_resume_url,character varying,NO,NO
+public,application_status,cover_letter_id,integer,NO,YES
+public,application_status,sent_at,timestamp without time zone,NO,NO
+public,application_status,updated_at,timestamp without time zone,NO,NO
+public,country,country_code,character varying,YES,NO
+public,country,c_name,character varying,NO,NO
+public,country,region,character varying,NO,NO
+public,cover_letter,cv_id,integer,YES,NO
+public,cover_letter,applicant_id,character varying,NO,YES
+public,cover_letter,cv_type,character varying,NO,NO
+public,cover_letter,details,text,NO,NO
+public,cover_letter,job_id,integer,NO,YES
+public,cover_letter,personalized,boolean,NO,NO
+public,cover_letter,created_at,timestamp without time zone,NO,NO
+public,enhanced_resumes,id,integer,YES,NO
+public,enhanced_resumes,user_id,character varying,NO,YES
+public,enhanced_resumes,original_resume_url,character varying,NO,NO
+public,enhanced_resumes,enhanced_resume_url,character varying,NO,NO
+public,enhanced_resumes,job_id,integer,NO,YES
+public,enhanced_resumes,improvements,jsonb,NO,NO
+public,enhanced_resumes,keywords,jsonb,NO,NO
+public,enhanced_resumes,created_at,timestamp without time zone,NO,NO
+public,hr,user_id,character varying,YES,YES
+public,hr,hr_name,character varying,NO,NO
+public,hr,hr_contact,character varying,NO,NO
+public,hr,hr_org,integer,NO,YES
+public,job,job_name,character varying,YES,NO
+public,job,job_type,character varying,NO,NO
+public,job,job_desc,text,NO,NO
+public,job_preferences,id,integer,YES,NO
+public,job_preferences,user_id,character varying,NO,YES
+public,job_preferences,keywords,jsonb,NO,NO
+public,job_preferences,location,character varying,NO,NO
+public,job_preferences,salary_range,character varying,NO,NO
+public,job_preferences,job_types,jsonb,NO,NO
+public,job_preferences,experience_level,character varying,NO,NO
+public,job_preferences,industries,jsonb,NO,NO
+public,job_preferences,created_at,timestamp without time zone,NO,NO
+public,job_preferences,updated_at,timestamp without time zone,NO,NO
+public,jobs_applied,job_id,integer,YES,YES
+public,jobs_applied,applicant_id,character varying,YES,YES
+public,jobs_applied,application_date,date,NO,NO
+public,jobs_applied,hr_user_id,character varying,NO,YES
+public,jobs_applied,enhanced_resume_url,character varying,NO,NO
+public,jobs_applied,cover_letter_id,integer,NO,YES
+public,jobs_applied,application_status,character varying,NO,NO
+public,jobs_applied,sent_at,timestamp without time zone,NO,NO
+public,jobs_applied,updated_at,timestamp without time zone,NO,NO
+public,office_address,office_id,integer,YES,NO
+public,office_address,orgid,integer,NO,YES
+public,office_address,state_code,character varying,NO,YES
+public,office_address,off_address,text,NO,NO
+public,office_address,off_type,character varying,NO,NO
+public,office_address,contacts,text,NO,NO
+public,org_jobs,job_id,integer,YES,NO
+public,org_jobs,org_id,integer,NO,YES
+public,org_jobs,job_location,character varying,NO,NO
+public,org_jobs,job_title,character varying,NO,NO
+public,org_jobs,job_desc,text,NO,NO
+public,org_jobs,date_posted,timestamp with time zone,NO,NO
+public,org_jobs,experience,character varying,NO,NO
+public,org_jobs,work_type,character varying,NO,NO
+public,org_jobs,salary,character varying,NO,NO
+public,org_jobs,qualification,text,NO,NO
+public,org_jobs,apply_link,character varying,NO,NO
+public,organisation,org_id,integer,YES,NO
+public,organisation,org_type,character varying,NO,NO
+public,organisation,org_name,character varying,NO,NO
+public,organisation,org_desc,text,NO,NO
+public,service_usage,id,integer,YES,NO
+public,service_usage,user_id,character varying,NO,YES
+public,service_usage,service_name,character varying,NO,NO
+public,service_usage,usage_count,integer,NO,NO
+public,service_usage,last_used,timestamp without time zone,NO,NO
+public,service_usage,created_at,timestamp without time zone,NO,NO
+public,state,state_code,character varying,YES,NO
+public,state,state_name,character varying,NO,NO
+public,state,country_code,character varying,NO,YES
+public,user_application_summary,applicant_id,character varying,NO,NO
+public,user_application_summary,job_id,integer,NO,NO
+public,user_application_summary,job_title,character varying,NO,NO
+public,user_application_summary,org_id,integer,NO,NO
+public,user_application_summary,org_name,character varying,NO,NO
+public,user_application_summary,application_date,date,NO,NO
+public,user_application_summary,application_status,character varying,NO,NO
+public,user_application_summary,enhanced_resume_url,character varying,NO,NO
+public,user_application_summary,cover_letter_id,integer,NO,NO
+public,user_application_summary,sent_at,timestamp without time zone,NO,NO
+public,user_profile_complete,id,integer,NO,NO
+public,user_profile_complete,uid,character varying,NO,NO
+public,user_profile_complete,email,character varying,NO,NO
+public,user_profile_complete,role,character varying,NO,NO
+public,user_profile_complete,app_name,character varying,NO,NO
+public,user_profile_complete,phone,character varying,NO,NO
+public,user_profile_complete,location,character varying,NO,NO
+public,user_profile_complete,education,text,NO,NO
+public,user_profile_complete,skills,text,NO,NO
+public,user_profile_complete,experience,text,NO,NO
+public,user_profile_complete,original_resume_filepath,text,NO,NO
+public,user_profile_complete,improved_resume_text,text,NO,NO
+public,user_profile_complete,profile_completed,boolean,NO,NO
+public,user_profile_complete,application_flow_completed,boolean,NO,NO
+public,user_profile_complete,created_at,timestamp without time zone,NO,NO
+public,user_profile_complete,updated_at,timestamp without time zone,NO,NO
+public,user_profiles,id,integer,YES,NO
+public,user_profiles,name,character varying,NO,NO
+public,user_profiles,email,character varying,NO,NO
+public,user_profiles,phone,character varying,NO,NO
+public,user_profiles,location,character varying,NO,NO
+public,user_profiles,education,text,NO,NO
+public,user_profiles,skills,text,NO,NO
+public,user_profiles,projects,text,NO,NO
+public,user_profiles,experience,text,NO,NO
+public,user_profiles,achievements,text,NO,NO
+public,user_profiles,societies,text,NO,NO
+public,user_profiles,links,text,NO,NO
+public,user_profiles,original_resume_filepath,text,NO,NO
+public,user_profiles,improved_resume_text,text,NO,NO
+public,user_profiles,profile_completed,boolean,NO,NO
+public,user_profiles,application_flow_completed,boolean,NO,NO
+public,user_profiles,created_at,timestamp without time zone,NO,NO
+public,user_profiles,updated_at,timestamp without time zone,NO,NO
+public,user_profiles,resume_url,character varying,NO,NO
+public,user_profiles,user_id,character varying,NO,YES
+public,user_profiles,summary,text,NO,NO
+public,user_role,ur_id,integer,YES,NO
+public,user_role,u_type,character varying,NO,NO
+public,users,id,integer,YES,NO
+public,users,uid,character varying,NO,NO
+public,users,email,character varying,NO,NO
+public,users,role,character varying,NO,NO
+public,users,organization,character varying,NO,NO
+public,users,last_login,timestamp without time zone,NO,NO
+public,users,created_at,timestamp without time zone,NO,NO
+public,users,updated_at,timestamp without time zone,NO,NO

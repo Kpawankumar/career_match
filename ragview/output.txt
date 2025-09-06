@@ -1,0 +1,515 @@
+Career Match Platform - Complete User Guide
+Table of Contents
+Platform Overview
+Getting Started
+User Roles and Features
+Navigation and Website Structure
+User Registration and Login Process
+Applicant/Job Seeker Journey
+HR Representative Features
+Administrator Functions
+Technical Architecture
+Contact and Support
+Platform Overview
+About Career Match
+Career Match is an intelligent Resume and Job Matching Platform that revolutionizes the recruitment process by connecting job applicants with suitable opportunities and empowering HR professionals to manage hiring with ease. Our platform leverages advanced AI capabilities (Google Gemini) and robust cloud infrastructure (Google Cloud Platform) to deliver an intuitive and highly automated experience.
+Vision
+To be the leading intelligent platform that simplifies and optimizes the job search and recruitment process, ensuring the right talent finds the right opportunities with unparalleled efficiency.
+Mission
+To develop and maintain a secure, scalable, and user-friendly web application that automates resume parsing, intelligent job matching, content generation, and communication.
+Our Values
+Innovation: Leveraging cutting-edge AI technology to streamline recruitment
+Efficiency: Automating repetitive tasks to save time for both job seekers and recruiters
+Security: Protecting user data with enterprise-grade security measures
+User-Centric Design: Creating intuitive interfaces that serve all user types effectively
+Our Story
+Career Match was born from the recognition that traditional recruitment processes are time-consuming and often inefficient. By combining artificial intelligence with modern web technologies, we've created a platform that makes job searching and hiring more intelligent, faster, and more accurate.
+Getting Started
+Homepage Navigation
+The Career Match homepage features a clean navigation bar with the following options:
+Features - Learn about platform capabilities for job seekers and recruiters
+About - Discover Career Match's mission, values, and story
+Sign In - Access your existing account
+Get Started - Create a new account and begin your journey
+Footer Information
+The homepage footer contains:
+Contact Section:
+Phone number for customer support
+Email address for inquiries
+Physical location details
+Quick Navigation:
+Home
+Features
+About
+Sign In
+Legal Section:
+Privacy Policy
+Terms of Service
+Cookie Policy
+Support
+User Roles and Features
+Career Match serves three distinct user types, each with specialized features and dashboards:
+1. Applicant/Job Seeker
+Primary Goal: Find and apply for suitable job opportunities
+Key Features:
+AI-powered resume parsing and profile creation
+Intelligent job matching based on skills and preferences
+Automated resume and cover letter generation
+Direct application submission to employers
+Personal dashboard to track applications
+2. HR Representative/Recruiter
+Primary Goal: Find qualified candidates and manage recruitment process
+Key Features:
+AI-powered job posting creation
+Access to matched candidate profiles
+Application management dashboard
+Organization profile setup
+Candidate review and communication tools
+3. Administrator
+Primary Goal: Oversee platform operations and user management
+Key Features:
+System monitoring and log access
+User account management
+Performance insights and analytics
+Permission and role management
+Platform maintenance tools
+Navigation and Website Structure
+Feature Page
+When users click on "Features" in the navigation bar, they are redirected to a comprehensive feature page that showcases:
+For Job Seekers:
+AI-powered resume parsing
+Intelligent job matching
+Automated application generation
+Personalized job recommendations
+Application tracking dashboard
+For Recruiters:
+Smart job posting creation
+Candidate matching algorithms
+Application management tools
+Organization profile management
+Recruitment analytics
+About Page
+The About page provides detailed information about:
+Career Match's mission and vision
+Company values and principles
+The story behind the platform
+Team information and expertise
+Platform benefits and impact
+User Registration and Login Process
+New User Registration (Get Started)
+Click "Get Started" in the navigation bar
+Select User Role: 
+Job Seeker/Applicant
+Recruiter/HR Representative
+Administrator (by invitation only)
+Provide Registration Information: 
+Full Name
+Email Address
+Secure Password
+Role confirmation
+Account Verification via email
+Role-based Redirection to appropriate onboarding flow
+Existing User Login (Sign In)
+Click "Sign In" in the navigation bar
+Enter Credentials: 
+Email address
+Password
+Role-based Authentication via Firebase
+Automatic Redirection to user-specific dashboard
+Security Features
+Firebase Authentication for secure login
+PostgreSQL role management
+Encrypted password storage
+Role-based access control
+Session management and timeout
+Applicant/Job Seeker Journey
+Initial Setup Process
+Step 1: Registration and Login
+Complete registration as described above
+Verify email address
+Login with credentials
+Step 2: Resume Upload Page
+After first login, applicants are redirected to the resume upload page with two options:
+Option A: Upload Resume
+Upload resume file (PDF, DOC, DOCX supported)
+File stored securely in Google Cloud Storage
+Automatic AI parsing using Google Gemini API
+Redirection to auto-filled profile page
+Option B: Skip Now
+Choose to skip resume upload initially
+Direct redirection to applicant dashboard
+Option to upload resume later from dashboard
+AI-Powered Resume Parsing
+When a resume is uploaded, the Google Gemini API automatically extracts:
+Personal Information: Name, Email, Phone
+Professional Experience: Job titles, companies, duration, responsibilities
+Education: Degrees, institutions, graduation dates
+Skills: Technical and soft skills
+Achievements: Awards, certifications, notable accomplishments
+Applicant Profile Management
+Auto-filled Profile
+Profile automatically populated with parsed resume data
+All extracted information pre-filled in appropriate fields
+User review and approval required before finalizing
+Edit Profile Feature
+Click "Edit Profile" to modify any information
+Update personal details, experience, education, or skills
+Save Changes to permanently store updated information
+Real-time validation of required fields
+Profile Sections Include:
+Personal Information: Contact details, location preferences
+Professional Summary: AI-generated or user-customized
+Work Experience: Detailed employment history
+Education: Academic background and qualifications
+Skills: Technical competencies and soft skills
+Achievements: Certifications, awards, projects
+Job Preferences Setup
+After profile completion, applicants set job preferences:
+Desired Domain: Industry or field of interest
+Location Preferences: Geographic requirements
+Salary Expectations: Compensation range
+Qualification Level: Experience level requirements
+Work Type: Full-time, part-time, contract, remote options
+Intelligent Job Matching
+The platform uses Google Gemini AI combined with regex validation to match jobs based on:
+Experience Level: Matching years of experience
+Skills Alignment: Technical and soft skill compatibility
+Location Match: Geographic preferences
+Qualification Requirements: Education and certification needs
+Industry Relevance: Domain expertise alignment
+Dynamic Content Generation
+Tailored Resume Creation
+Job-Specific Resumes: AI generates customized resumes for each application
+Keyword Optimization: Resumes optimized for specific job descriptions
+Format Consistency: Professional formatting maintained across versions
+Version Control: Multiple resume versions stored and managed
+Cover Letter Generation
+Role-Aligned Content: Cover letters tailored to specific positions
+Company Research: AI incorporates relevant company information
+Personal Touch: Maintains applicant's voice and personality
+Professional Format: Industry-standard structure and tone
+Automated Application Process
+Email Generation
+AI-Drafted Emails: Professional application emails auto-generated
+Personalization: Customized for each company and role
+Attachment Management: Resume and cover letter automatically attached
+User Approval: Review and approve before sending
+SMTP Integration
+Reliable Delivery: Secure email sending via SMTP
+Delivery Confirmation: Tracking of sent applications
+Error Handling: Notification of delivery issues
+Applicant Dashboard
+Comprehensive dashboard providing:
+Application Tracking
+Applied Jobs: Complete list of submitted applications
+Application Status: Current status of each application
+Response Tracking: HR responses and feedback
+Timeline View: Chronological application history
+Resume Management
+Resume Versions: Access to all generated resume variants
+Download Options: PDF and DOC format downloads
+Version Comparison: Side-by-side version analysis
+Master Resume: Main resume for editing and updates
+Profile Management
+Quick Edit: Fast access to profile editing
+Preference Updates: Modify job search preferences
+Skill Updates: Add new skills and certifications
+Privacy Settings: Control profile visibility
+Job Recommendations
+Matched Jobs: AI-recommended positions
+New Opportunities: Fresh job postings matching preferences
+Saved Jobs: Bookmarked positions for later review
+Search History: Previously viewed job listings
+HR Representative Features
+Organization Profile Setup
+Company Information: Business details and description
+Industry Classification: Sector and specialization areas
+Location Details: Office locations and remote work policies
+Company Culture: Values, mission, and work environment
+AI-Powered Job Posting
+Automatic Generation
+Keyword-Based Creation: Generate posts from basic requirements
+Template Library: Pre-built templates for common roles
+Industry Standards: Compliance with posting best practices
+SEO Optimization: Enhanced visibility in search results
+Manual Creation Options
+Custom Job Posts: Full manual control over job descriptions
+Template Modification: Edit AI-generated posts
+Rich Text Editor: Formatting options for professional appearance
+Preview Mode: Review posts before publishing
+Candidate Management Dashboard
+Matched Applicants
+AI Matching: Candidates automatically matched to job posts
+Relevance Scoring: Numerical matching scores for each candidate
+Filter Options: Sort by experience, skills, location, or score
+Bulk Actions: Process multiple applications simultaneously
+Application Review
+Candidate Profiles: Detailed applicant information
+Resume Download: Access to tailored resumes and cover letters
+Application History: Track candidate's previous applications
+Notes System: Add private notes about candidates
+Communication Tools
+Direct Messaging: In-platform communication with candidates
+Email Integration: Send emails directly from the platform
+Interview Scheduling: Coordinate meeting times and locations
+Status Updates: Notify candidates of application progress
+Administrator Functions
+Administrator Registration and Authentication
+Initial Setup Process
+New Administrator Registration:
+First-time website visitors must sign up with administrator credentials
+Provide required information: name, email, and secure password
+Select "Administrator" as user role during registration process
+Complete email verification for account activation
+Automatic redirection to admin login page after successful registration
+Administrator Login Process:
+Returning administrators can directly access login page
+Enter registered email and password credentials
+Secure authentication through Firebase authentication system
+Role-based verification to ensure administrator-level access
+Direct redirection to Admin Dashboard upon successful authentication
+Profile Completion
+Required Information: Complete name, email, and password setup
+Profile Details: Additional administrator information and contact details
+Access Level Configuration: Set appropriate administrative permissions
+Security Settings: Two-factor authentication and security preferences
+Administrator Dashboard Overview
+Main Dashboard Features
+System Overview: Real-time platform statistics and health metrics
+User Management Center: Comprehensive user account administration
+Platform Analytics: Usage statistics and performance insights
+Security Monitoring: Authentication logs and security event tracking
+System Configuration: Platform settings and feature management
+Navigation System
+Primary Navigation Menu:
+Dashboard: Main administrative overview (home page)
+User Management: Complete user account administration
+System Monitoring: Platform performance and health checks
+Analytics: Comprehensive platform usage and performance analytics
+Settings: System configuration and administrative preferences
+Reports: Generate and access various platform reports
+Administrator Profile Section:
+Admin Avatar: Displays administrator's initials or profile picture
+Profile Dropdown Menu: 
+Profile: Administrator account information and settings
+System Settings: Platform-wide configuration options
+Security Settings: Authentication and access control management
+Logout: Secure session termination
+Comprehensive System Monitoring
+Real-Time Performance Metrics
+Platform Uptime: System availability and performance statistics
+Response Times: API and page load performance monitoring
+Error Rates: System error frequency and resolution tracking
+Resource Usage: Server resources, database performance, and storage utilization
+Active Sessions: Current user sessions and platform activity levels
+Advanced Error Tracking
+Error Classification: Categorization of system errors by type and severity
+Error Resolution Status: Track progress of bug fixes and system improvements
+Error Impact Analysis: Assess how errors affect user experience
+Automated Alerts: Real-time notifications for critical system issues
+Error Trend Analysis: Historical error patterns and prevention strategies
+User Activity Monitoring
+Login Pattern Analysis: Track user authentication patterns and frequency
+Feature Usage Statistics: Monitor which platform features are most utilized
+User Engagement Metrics: Time spent on platform and feature interaction rates
+Geographic Usage Distribution: User activity by location and region
+Peak Usage Times: Identify high-traffic periods for resource planning
+Security Event Monitoring
+Authentication Attempts: Monitor successful and failed login attempts
+Unauthorized Access Detection: Identify and track suspicious activity
+Data Access Logs: Monitor who accesses what data and when
+Security Breach Notifications: Immediate alerts for potential security issues
+Compliance Monitoring: Ensure adherence to security standards and regulations
+Advanced User Management System
+Comprehensive Account Administration
+User Account Creation: Create new accounts for all user types (Applicants, HR, Administrators)
+Account Modification: Update user information, contact details, and preferences
+Account Deactivation: Temporarily or permanently disable user accounts
+Password Reset Management: Handle password reset requests and security questions
+Email Verification: Manage email verification status and resend verification emails
+Role and Permission Management
+Role Assignment: Assign appropriate roles to users (Applicant, HR Representative, Administrator)
+Permission Modification: Adjust specific permissions within user roles
+Hierarchical Access Control: Manage different levels of administrative access
+Role-Based Feature Access: Control which features each user type can access
+Custom Role Creation: Create specialized roles for specific organizational needs
+Bulk User Operations
+Mass Account Creation: Import and create multiple user accounts simultaneously
+Bulk Permission Updates: Apply permission changes to multiple users at once
+Group User Management: Organize users into groups for easier administration
+Batch Email Communications: Send notifications to multiple users simultaneously
+Data Export/Import: Export user data and import updates in bulk
+Comprehensive Platform Analytics
+Usage Statistics and Insights
+Platform Engagement Metrics: Overall user engagement and activity levels
+Feature Utilization Analysis: Which features are used most frequently
+User Retention Rates: Track how many users return to the platform over time
+Conversion Metrics: Success rates for job applications and hiring processes
+Performance Benchmarks: Compare current performance to historical data
+User Feedback and Satisfaction
+Feedback Collection: Centralized repository of user feedback and suggestions
+Satisfaction Surveys: Results from user satisfaction questionnaires
+Feature Requests: Track and prioritize user-requested features
+Bug Reports: User-reported issues and their resolution status
+User Experience Improvements: Track improvements based on user feedback
+Growth and Performance Metrics
+User Acquisition: New user registration trends and sources
+User Retention: Long-term user engagement and platform loyalty
+Platform Growth: Overall platform expansion and usage trends
+Revenue Analytics: Financial performance and subscription metrics
+Market Analysis: Competitive positioning and market share insights
+Comprehensive Log Management
+System Activity Logs
+Platform Operations: Complete logging of all system operations and processes
+Database Transactions: Record of all database reads, writes, and modifications
+API Calls: Log of all internal and external API interactions
+File Operations: Track file uploads, downloads, and modifications
+System Maintenance: Log of all maintenance activities and system updates
+Detailed Error Logging
+Error Classification: Comprehensive categorization of all system errors
+Stack Traces: Detailed technical information for debugging purposes
+Error Context: Environmental information surrounding each error occurrence
+Resolution Tracking: Progress tracking for error fixes and system improvements
+Error Prevention: Analysis to prevent similar errors in the future
+User Action Tracking
+Login/Logout Events: Complete record of user authentication activities
+Feature Usage: Detailed tracking of how users interact with platform features
+Data Modifications: Log of all user-generated content changes and updates
+Application Submissions: Track all job applications and related activities
+Communication Logs: Record of all platform-based communications
+Security and Authentication Logs
+Authentication Events: Successful and failed login attempts with timestamps
+Authorization Checks: Record of permission verification and access control
+Security Violations: Attempted unauthorized access and security breaches
+Data Access: Track who accesses what data and when
+Administrative Actions: Log of all administrative activities and system changes
+System Configuration and Management
+Platform Settings
+Feature Toggles: Enable or disable specific platform features
+Performance Tuning: Adjust system parameters for optimal performance
+Security Configuration: Manage security settings and access controls
+Integration Management: Configure third-party integrations and APIs
+Maintenance Scheduling: Plan and schedule system maintenance windows
+User Experience Management
+Interface Customization: Modify platform appearance and user interface elements
+Content Management: Update platform content, help text, and notifications
+Notification Settings: Configure system-wide notification preferences
+Email Templates: Manage automated email templates and content
+Help Documentation: Update and maintain user help resources
+Advanced Reporting and Analytics
+Custom Report Generation
+User Reports: Generate detailed reports on user activity and engagement
+Performance Reports: System performance and efficiency analysis
+Security Reports: Comprehensive security status and incident reports
+Financial Reports: Revenue, subscription, and financial performance analysis
+Compliance Reports: Regulatory compliance and audit trail documentation
+Data Export and Analysis
+Raw Data Export: Export platform data for external analysis
+Formatted Reports: Generate professionally formatted reports for stakeholders
+Scheduled Reports: Automatically generate and distribute regular reports
+Interactive Dashboards: Create dynamic dashboards for real-time monitoring
+Data Visualization: Generate charts, graphs, and visual representations of data
+Security and Compliance Management
+Access Control Administration
+Multi-Factor Authentication: Configure and manage 2FA for enhanced security
+Session Management: Control user session duration and security parameters
+IP Restrictions: Manage access restrictions based on geographic location
+Device Management: Track and control access from different devices
+Password Policies: Enforce strong password requirements and rotation policies
+Compliance Monitoring
+Data Privacy Compliance: Ensure adherence to GDPR, CCPA, and other privacy regulations
+Security Standards: Maintain compliance with industry security standards
+Audit Trail Maintenance: Keep comprehensive records for compliance audits
+Regular Security Assessments: Conduct and track security evaluations
+Incident Response: Manage security incidents and compliance violations
+Platform Maintenance and Updates
+System Updates
+Software Updates: Manage platform software updates and version control
+Database Maintenance: Perform regular database optimization and maintenance
+Server Management: Monitor and maintain server infrastructure
+Backup Management: Ensure regular data backups and recovery procedures
+Performance Optimization: Continuously improve platform performance
+Feature Development
+New Feature Rollouts: Manage the deployment of new platform features
+Beta Testing: Coordinate testing of new features with select users
+Feature Documentation: Maintain comprehensive documentation for all features
+User Training: Provide training materials for new platform capabilities
+Feedback Integration: Incorporate user feedback into feature development
+Technical Architecture
+Frontend Technology
+Framework: React with TypeScript
+Purpose: Responsive and dynamic user interface
+Features: Cross-platform compatibility, real-time updates
+Performance: Optimized loading and interactive experiences
+Backend Architecture
+Design: Microservices architecture
+Deployment: Google Cloud Platform (Cloud Run/Kubernetes)
+Communication: RESTful APIs between services
+Scalability: Dynamic resource allocation based on demand
+Database Management
+Technology: PostgreSQL
+Storage: Centralized storage for all platform data
+Data Types: User profiles, resume metadata, job posts, system logs
+Security: Encrypted storage with role-based access
+Cloud Infrastructure
+Platform: Google Cloud Platform (GCP)
+File Storage: GCP Cloud Storage for resume files
+Database: Cloud SQL for PostgreSQL hosting
+Computing: Cloud Run for containerized services
+Benefits: Scalability, reliability, and enterprise-grade security
+AI Integration
+Primary AI: Google Gemini API
+Resume Parsing: Extract structured data from uploaded documents
+Job Matching: Intelligent matching algorithms
+Content Generation: Automated resume and cover letter creation
+Email Drafting: Professional application email generation
+Authentication System
+Technology: Firebase Authentication
+Database Integration: PostgreSQL role mapping
+Security Features: Multi-factor authentication, session management
+Role Management: Hierarchical permission system
+Contact and Support
+Customer Support
+Phone Support: Available during business hours
+Email Support: 24/7 email assistance
+Live Chat: Real-time support for urgent issues
+Help Center: Comprehensive self-service resources
+Technical Support
+Platform Issues: Technical problem resolution
+Account Management: Login and access support
+Feature Guidance: How-to assistance for platform features
+Integration Support: API and third-party integration help
+Business Inquiries
+Partnership Opportunities: Collaboration and integration partnerships
+Enterprise Solutions: Custom solutions for large organizations
+Pricing Information: Subscription and pricing details
+Demo Requests: Platform demonstrations for potential clients
+Feedback and Suggestions
+Feature Requests: Suggestions for new platform features
+User Experience Feedback: Interface and usability improvements
+Bug Reports: Report platform issues and inconsistencies
+Success Stories: Share positive experiences and outcomes
+Frequently Asked Questions
+For Job Seekers
+Q: How does the AI resume parsing work? A: Our AI uses Google Gemini to analyze your uploaded resume and extract key information like work experience, education, skills, and achievements. This data is then used to auto-fill your profile and match you with relevant job opportunities.
+Q: Can I edit my profile after the AI auto-fills it? A: Yes, you can easily edit any information in your profile by clicking the "Edit Profile" option. All changes are saved permanently and will be reflected in future job matches and applications.
+Q: How are jobs matched to my profile? A: Our intelligent matching system considers your experience level, skills, location preferences, qualifications, and desired industry to find the most relevant job opportunities for you.
+Q: Can I see all versions of my resumes? A: Yes, your dashboard includes a resume management section where you can view, download, and compare all versions of your resumes that have been generated for different job applications.
+For HR Representatives
+Q: How does the AI job posting feature work? A: You can input basic job requirements or keywords, and our AI will generate a comprehensive job posting. You can also manually create or edit any AI-generated posts to match your specific needs.
+Q: How do I access matched candidates? A: Your HR dashboard will display candidates who match your job postings, complete with relevance scores and detailed profiles. You can filter and sort candidates based on various criteria.
+Q: Can I communicate with candidates through the platform? A: Yes, the platform includes communication tools for direct messaging with candidates, email integration, and interview scheduling capabilities.
+General Questions
+Q: Is my data secure on Career Match? A: Yes, we use enterprise-grade security including Firebase authentication, encrypted data storage, and Google Cloud Platform's security infrastructure to protect all user data.
+Q: What file formats are supported for resume uploads? A: Career Match supports PDF, DOC, and DOCX file formats for resume uploads.
+Q: Is there a mobile version of Career Match? A: Yes, Career Match is built with responsive design and works seamlessly across desktop, tablet, and mobile devices.
+Legal Information
+Privacy Policy
+Career Match is committed to protecting user privacy. Our privacy policy outlines how we collect, use, and protect personal information, including data sharing practices and user rights.
+Terms of Service
+Our terms of service define the legal agreement between Career Match and platform users, including user responsibilities, platform rules, and service limitations.
+Cookie Policy
+We use cookies to enhance user experience, provide personalized content, and analyze platform usage. Our cookie policy explains what cookies we use and how users can manage their preferences.
+Data Protection
+Career Match complies with applicable data protection regulations and implements industry-standard security measures to protect user information and maintain data integrity.
+This guide serves as a comprehensive resource for understanding and using the Career Match platform. For additional support or questions not covered in this guide, please contact our support team.
